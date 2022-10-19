@@ -1,0 +1,44 @@
+.head {
+  color: #ffffff;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
+  border-bottom: 1px solid var(--border-cabecera-mobile);
+
+  position: absolute;
+}
+
+.head__logo {
+  margin-bottom: 1rem;
+}
+
+.head__navegacion {
+  text-align: center;
+}
+
+.head__enlace {
+  font-size: 1.1rem;
+
+  display: inline-block;
+
+  margin-right: 0.7rem;
+  margin-bottom: 0.7rem;
+  margin-left: 0.7rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .head {
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+  }
+}
